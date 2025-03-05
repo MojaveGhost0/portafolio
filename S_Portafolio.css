@@ -38,7 +38,7 @@ h4
     font-family: 'Days One', serif;
     color: #d3d0cf;
     font-size: 1.5em;
-    padding-bottom: 5px;
+    padding-bottom: 2px;
 }
 p {
     font-family: 'Days One', serif;
@@ -50,7 +50,7 @@ section{
     margin: 20px;
     background: rgba(0, 0, 0, 0.8);
     image-resolution: from-image;
-    border-radius: 5px;
+    border-radius: 6px;
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
 }
 section img {
@@ -74,6 +74,7 @@ button:hover {
   transform: scale(1.05) translateY(-2px); /* se define el tamaño y la posicion de la transformacion */
   box-shadow: 0 5px 15px rgba(255, 26, 26, 0.4); /* se define la sombra De la transformacion */
 }
+
 grid {
     display: grid;/* convierte a los elementos en grid */
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));/* se define el tamaño de las columnas */
@@ -81,7 +82,7 @@ grid {
     padding: 20px;/* margen interno */
 }
 
-.contenedor_img {
+.contenedor_disco {
     max-width:fit;
     margin: 0;/* centra el contenido */
     display: flex;/* convierte a los elementos en flexibles */
@@ -95,21 +96,32 @@ grid {
     font-size: 1.2em;
     line-height: 1.5em;
 }
+.productores {
+    font-family: 'Days One', serif;
+    color: #c00a0a;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
 .img_bio {
-    width: 100%;
+    width:100%;
     border-radius: 1px;
     border-bottom: #8b0000;
 }
   
 @media (max-width: 768px) {
-    .contenedor_img {
+    .contenedor_disco {
       flex-direction: column;
     }
     .img_bio {
       width: 100%;
     }
-    .img_ssj {
+    .img_disco {
       flex-direction: column;
     }
-    
+    }
+    footer {
+        background-color: rgba(0, 0, 0, 0.83);
+        color: #c00a0a;
+        padding: 10px 0;
+        text-align: center;
     }
